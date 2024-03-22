@@ -1,5 +1,5 @@
-#include <panda3d/pandaFramework.h>
-#include <panda3d/pandaSystem.h>
+#include <pandaFramework.h>
+#include <pandaSystem.h>
 
 int main(int argc, char* argv[])
 {
