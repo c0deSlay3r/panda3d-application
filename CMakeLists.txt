@@ -8,8 +8,8 @@ set(PANDA3D_LIBS_DIR "" CACHE PATH "Path to Panda3D libs file")
 set(EIGEN3_DIR "")
 
 
-message(STATUS "Configuring for Unix")
 if(UNIX)
+    message(STATUS "Configuring for Unix")
     message(STATUS "Looking for Panda3D directory")
 
 
@@ -68,12 +68,12 @@ if(UNIX)
     message(STATUS "Search for all Panda3D libraries - done")
 
     set(CMAKE_CXX_STANDARD 20)
+    message(STATUS "Configuring for Unix - done")
 endif(UNIX)
-message(STATUS "Configuring for Unix - done")
 
 
-message(STATUS "Configuring for Windows")
 if(WIN32)
+    message(STATUS "Configuring for Windows")
     message(STATUS "Looking for Panda3D directory")
 
     if(NOT PANDA3D_INCLUDE_DIR AND NOT PANDA3D_LIBS_DIR)
@@ -132,8 +132,8 @@ if(WIN32)
     message(STATUS "Copying configuration files - done")
 
     set(CMAKE_CXX_STANDARD 14)
+    message(STATUS "Configuring for Windows - done")
 endif(WIN32)
-message(STATUS "Configuring for Windows - done")
 
 
 message(STATUS "Search for project files")
